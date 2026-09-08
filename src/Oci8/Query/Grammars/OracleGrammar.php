@@ -374,7 +374,7 @@ class OracleGrammar extends Grammar
             }
 
             if (preg_match('/\s+as\s+(.+)$/i', $value, $matches)) {
-                $columns[] = 't2.'.$this->wrap($matches[1]);
+                $columns[] = 't2.'.$matches[1];
 
                 continue;
             }
